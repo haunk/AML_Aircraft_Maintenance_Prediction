@@ -1,0 +1,28 @@
+OPTUNA SEARCH COMPLETE
+======================================================================
+
+Best PR-AUC: 0.6707
+
+Best hyperparameters:
+  d_model             : 256
+  n_head              : 8
+  num_layers          : 6
+  dim_ff              : 1024
+  lr                  : 8.311967440127444e-05
+  dropout             : 0.1844393045515691
+
+--- Top 5 trials ---
+    number     value  params_d_model  params_n_head  params_num_layers  params_dim_ff  params_lr  params_dropout
+17      17  0.670691             256              8                  6           1024   0.000083        0.184439
+13      13  0.669659             256              8                  5           1024   0.000024        0.117022
+16      16  0.666443             256              8                  5           1024   0.000028        0.180966
+19      19  0.664520             256              8                  6           1024   0.000070        0.264199
+0        0  0.660075             256              8                  5            512   0.000010        0.064256
+
+--- Recommended config for FULL dataset ---
+D_MODEL         = 256
+N_HEAD          = 8
+NUM_LAYERS      = 6
+DIM_FEEDFORWARD = 1024
+LR              = 2.08e-05   (subset best 8.31e-05 / 4)
+DROPOUT         = 0.184
